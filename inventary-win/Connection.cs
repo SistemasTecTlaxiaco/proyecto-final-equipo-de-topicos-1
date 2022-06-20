@@ -15,11 +15,10 @@ namespace inventio_win
             try
             {
                 MySqlConnectionStringBuilder b = new MySqlConnectionStringBuilder();
-                b.Server = "127.0.0.1";
+                b.Server = "localhost";
                 b.UserID = "root";
-                
                 b.Password = "";
-                b.Database = "tienda";
+                b.Database = "inventiolite";
                 con = new MySqlConnection(b.ToString());
             }
             catch (MySqlException me) {
