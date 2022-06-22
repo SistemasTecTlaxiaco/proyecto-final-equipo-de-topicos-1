@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace inventio_win
 {
-    public partial class Inventory : Form
+    public partial class Inventario : Form
     {
-        public Inventory()
+        public Inventario()
         {
             InitializeComponent();
             dataGridView1.Columns.Add("Id", "Id");
@@ -68,6 +68,13 @@ namespace inventio_win
 
         private void recargarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            load_products();
+        }
+
+        private void inventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Input ip = new Input();
+            ip.ShowDialog();
             load_products();
         }
     }

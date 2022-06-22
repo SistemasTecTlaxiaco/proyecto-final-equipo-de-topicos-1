@@ -15,8 +15,9 @@ namespace inventio_win
             try
             {
                 MySqlConnectionStringBuilder b = new MySqlConnectionStringBuilder();
-                b.Server = "localhost";
+                b.Server = "127.0.0.1";
                 b.UserID = "root";
+                
                 b.Password = "";
                 b.Database = "inventiolite";
                 con = new MySqlConnection(b.ToString());

@@ -167,5 +167,10 @@ namespace inventio_win
             newProduct i = new newProduct();
             ;
         }
+
+        private void inventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -32,7 +32,7 @@ namespace inventio_win
             }
             else if (password.Text == "")
             {
-                MessageBox.Show("Debes escribir un password");
+                MessageBox.Show("Debes escribir una contraseña");
             }
             else {
 
